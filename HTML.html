@@ -15,26 +15,78 @@
 </script>
   </head>
   <style>
-    h1 {
-      text-align: center;
-      font-size: 35px;
+  body {
+      background-color: black;
     }
-
-    p {
-      text-align: left;
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  h1 {
+    text-align: center;
+    font-size: 35px;
+    border-bottom: 2px solid gold;
+    margin: 0;
+    padding-bottom: 10px;
+  }
+  h2 {
+    color: white;
+  }
+  h4 {
+    color: white;
+  }
+  p {
+    text-align: left;
+    color: white;
+  }
+  #grid {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+  }
+  ul {
+    border-right: 2px solid gold;
+    border-bottom: 2px solid gold;
+    margin: 0;
+    width: 130px;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-bottom: 100%;
+    }
+  .list {
+    font-size: 25px;
+  }
+  #now {
+    color: gold;
+  }
+  #madeby {
+      color: gold;
     }
   </style>
   <body>
-    <h1><a href="index.html" target="_self" style="color: blue; text-decoration: none;">My WEB</a></h1>
+    <h1><a href="index.html" target="_self" style="color: white; text-decoration: none;">TakeALook's WEB</a></h1>
+    <div id="grid">
+    <div>
+      <ul>
+        <li><a href="HTML.html" target="_blank" class="list" id="now">HTML</a></li>
+        <li><a href="CSS.html" target="_blank" class="list">CSS</a></li>
+        <li>
+          <a href="JavaScript.html" target="_blank" class="list">JavaScript</a>
+        </li>
+        <li><a href="Python.html" target="_blank" class="list">Python</a></li>
+        <li><a href="Django.html" target="_blank" class="list">Django</a></li>
+      </ul>
+    </div>
+    <div>
     <p>
       <h2>1.HTML의 의미와 구조</h2><br />
+      <p>
       HTML은 <strong>Hyper Text Markup Language</strong>, 즉 컴퓨터의 컴파일이 필요한 언어가
       아닌, 마크업 언어이며, WEB을 구성하는 가장 기본적이며 최소한의 언어이다.<br>
         HTML의 기본적 구조는 Tag라는 것과 그 Tag들의 속성등을 정의하여 사용하고,
         <>와 < / >로 시작과 끝을 구분한다. 물론, <>만 사용하는 Tag도 있다. 실제로 코딩을 하면 아래의 사진과 같다. 
-        <img src="HTML구조.jpg" width="70%">
+      </p> 
+        <img src="HTML구조.jpg" width="75%">
     </p>
-    <>
         <h2>2.HTML의 Tag들</h2>
         <h4>"!DOCTYPE"</h4>
         <p>
@@ -79,11 +131,13 @@
         </p>
         <h4>"p 와 br"</h4>
         <p>
-          p는 HTML의 내용을 담당하는 Tag이다. 기본적 구조로 되어있으며, <>와 < / >의 사이의 내용을 한 단락으로 인식시켜주는 특징이있다.
-          br은 줄바꿈을 담당하는 Tag이며, 외톨이 구조로 되어있다. 단순히 줄바꿈을 하는 Tag이기에 줄바꿈을 해주고 싶은 곳에 적어주면 사용할 수 있다.
+          <strong>p는 HTML의 내용을 담당하는 Tag이다.</strong> 기본적 구조로 되어있으며, <>와 < / >의 사이의 내용을 한 단락으로 인식시켜주는 특징이있다.
+          <strong>br은 줄바꿈을 담당하는 Tag이며, 외톨이 구조</strong>로 되어있다. 단순히 줄바꿈을 하는 Tag이기에 줄바꿈을 해주고 싶은 곳에 적어주면 사용할 수 있다.
         </p>
+      </div>
+    </div>
     </p>
-    <p>made by.TakeALook</p>
+    <p><div id="madeby">made by. TakeALook</div></p>
     <p>
       <div id="disqus_thread"></div>
       <script>
