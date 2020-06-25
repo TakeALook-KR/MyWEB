@@ -61,6 +61,9 @@
   #madeby {
       color: gold;
     }
+  strong {
+    color:mediumseagreen;
+  }
   </style>
   <body>
     <h1><a href="index.html" target="_self" style="color: white; text-decoration: none;">TakeALook's WEB</a></h1>
@@ -146,6 +149,8 @@
           div와 span은 <strong>아무런 기능이 없는 비어있는 Tag로, 독립적으로 사용하는 것이 아닌, CSS와 연계하여 사용한다.</strong> 
           div와 span의 차이는 Tag가 차지하는 공간으로 나눌수있는데, div는 p와 같이 컨탠츠가 존재하는 그 line을 모두 사용한다. 
           이와 반대로 span은 a와 같이 딱 그 Tag가 차지하는 공간만 사용한다. 하지만 inline이나 block과 같이 속성을 부여하면 바꿀 수 있다. 
+          아래의 사진은 div Tag를 실제로 이용한 예이다. <br>
+          <img src="div_tag.jpg">
         </p>
         <h4>"style"</h4>
         <p>
@@ -157,10 +162,12 @@
         <h4>"class와 id"</h4>
         <p>
           class와 id는 개별적인 의미를 가지는 Tag가 아닌 Tag들의 카테고리를 지정해주는 Tag의 속성 요소이다. 하지만, class와 id 사이에는
-          적용순서가 있다. class가 포괄적으로 속성을 지정하는 느낌이라면, id는 매우 구체적으로 속성을 지정하는 요소인 것이다. 
+          적용순서가 있다. <strong>class가 포괄적으로 속성을 지정하는 느낌이라면, id는 매우 구체적으로 속성을 지정하는 요소인 것이다.</strong> 
           예를들어, "list"라는 class가 있고 "listNow"라는 id가 있다고 하자. 이런 상황에 style Tag로 해당 class와 id에 속한 Tag들의 속성을 
           일괄적으로 변경한다 했을 때에 우선 class가 먼저 1차적으로 적용되고 id가 그 후발주자로 적용되어 결국은 최종적으로 id의 속성이 적용되는 것이다.
-          그리고, id는 여러개의 Tag에 동일한 이름으로 중복할 수 없다는 특징이 있다. 구체적 사용방법은 <>부분에 class 또는 id =""으로 사용하면 된다.
+          그리고, <strong>id는 여러개의 Tag에 동일한 이름으로 중복할 수 없다는 특징이 있다.</strong> 구체적 사용방법은 <>부분에 class 또는 id =""으로 사용하면 된다.
+          밑의 사진은 이 Page의 실제 코드이다. <br>
+          <img src="class_id_tag.jpg">
         </p>
       </div>
     </div>
