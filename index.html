@@ -23,6 +23,10 @@
     h1 {
       text-align: center;
       font-size: 35px;
+      border-bottom:2px solid black;
+      margin: 0;
+      padding: 5px;
+      
     }
     p {
       text-align: left;
@@ -30,17 +34,28 @@
     .list {
       font-size: 25px;
     }
+    ul {
+      border-right: 2px solid black;
+      margin: 0;
+      margin-bottom: 1fr;
+      width: 130px;
+      padding-top: 15px;
+      padding-left: 15px;
+      
+    }
+    #grid {
+      display: grid;
+      grid-template-columns: 150px 1fr;
+    }
   </style>
   <body>
     <h1>
-      <a href="index.html" target="_self" style="color: blue; font-size: 35px;"
+      <a href="index.html" target="_self" style="color: black; font-size: 35px;"
         >My WEB</a
       >
     </h1>
-    <p style="text-align: center;">
-      My WEB은 <strong>TakeALook</strong>의 코딩 공부를 기록하는 Page입니다.
-    </p>
-    <img src="codeing.jpg" width="70%" style="vertical-align: top;" />
+  <div id="grid">
+    <div>
     <ul>
       <li><a href="HTML.html" target="_blank" class="list">HTML</a></li>
       <li><a href="CSS.html" target="_blank" class="list">CSS</a></li>
@@ -50,6 +65,14 @@
       <li><a href="Python.html" target="_blank" class="list">Python</a></li>
       <li><a href="Django.html" target="_blank" class="list">Django</a></li>
     </ul>
+  </div>
+    <div>
+    <p style="text-align: center;">
+      My WEB은 <strong>TakeALook</strong>의 코딩 공부를 기록하는 Page입니다.
+    </p>
+    <img src="codeing.jpg" width="100%" style="vertical-align: top;" />
+    </div>
+  </div>
     <p>
       <div id="disqus_thread"></div>
       <script>
