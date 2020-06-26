@@ -1,0 +1,49 @@
+body {
+  background-color: black;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+h1 {
+  text-align: center;
+  font-size: 35px;
+  border-bottom: 2px solid gold;
+  margin: 0;
+  padding: 5px;
+}
+h2 {
+  color: white;
+}
+h4 {
+  color: white;
+}
+p {
+  text-align: left;
+  color: white;
+}
+.list {
+  font-size: 25px;
+}
+ul {
+  border-right: 2px solid gold;
+  border-bottom: 2px solid gold;
+  margin: 0;
+  width: 130px;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-bottom: 100%;
+}
+#grid {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+}
+#madeby {
+  color: gold;
+}
+strong {
+  color: mediumseagreen;
+}
+#now {
+  color: gold;
+}

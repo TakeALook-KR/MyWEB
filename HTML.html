@@ -14,57 +14,7 @@
   gtag('config', 'UA-170625579-1');
 </script>
   </head>
-  <style>
-  body {
-      background-color: black;
-    }
-  a {
-    text-decoration: none;
-    color: white;
-  }
-  h1 {
-    text-align: center;
-    font-size: 35px;
-    border-bottom: 2px solid gold;
-    margin: 0;
-    padding-bottom: 10px;
-  }
-  h2 {
-    color: white;
-  }
-  h4 {
-    color: white;
-  }
-  p {
-    text-align: left;
-    color: white;
-  }
-  #grid {
-    display: grid;
-    grid-template-columns: 150px 1fr;
-  }
-  ul {
-    border-right: 2px solid gold;
-    border-bottom: 2px solid gold;
-    margin: 0;
-    width: 130px;
-    padding-top: 15px;
-    padding-left: 15px;
-    padding-bottom: 100%;
-    }
-  .list {
-    font-size: 25px;
-  }
-  #now {
-    color: gold;
-  }
-  #madeby {
-      color: gold;
-    }
-  strong {
-    color:mediumseagreen;
-  }
-  </style>
+<link rel="stylesheet" href="mainstyle.css">
   <body>
     <h1><a href="index.html" target="_self" style="color: white; text-decoration: none;">TakeALook's WEB</a></h1>
     <div id="grid">
@@ -168,6 +118,18 @@
           그리고, <strong>id는 여러개의 Tag에 동일한 이름으로 중복할 수 없다는 특징이 있다.</strong> 구체적 사용방법은 <>부분에 class 또는 id =""으로 사용하면 된다.
           밑의 사진은 이 Page의 실제 코드이다. <br>
           <img src="class_id_tag.jpg">
+        </p>
+        <h4>"link"</h4>
+        <p>
+          <strong>link는 HTML과 CSS의 연걸용 Tag이다. HTML 문서안에 Tag들이 많아질수록, 트레킹이 높아지는데, 이것을 쉬운말로하면 서버의 이용율이 높아진다는 것이다.
+          트레킹이 높아지면, 웹의 운영자는 서버이용에 대한 요금이 증가하고, 서버관리가 힘들어진다.</strong> 이러한 것을 해소하기 위한 개념이 캐쉬와 link이다. 
+          우선 <strong>캐쉬란, 컴퓨터가 해당 웹의 정보를 임시로 다운로드해서 저장하는 것이다. 따라서 처음 접속할 때는 트레킹이 높아지지만, 다시 접속할때는 저장된 캐쉬를 이용하여
+          빠르게 불러오면서 트레킹도 낮추는 매우 효과적인 기술이다.</strong> 그리고 이 link Tag가 캐쉬 기술의 실현을 위한 Tag라고 할 수 있다. 
+          구체적인 이용 방법은 CSS의 내용을 담을 CSS 문서를 만들어 HTML에 style Tag를 이용하지 않고 속성을 정의한 파일로 연결해주는 것이다. 이 사이트에서 
+          실제로 사용한 예를 사진으로 보자면 다음과 같다.<br>
+          <img src="link_tag.jpg"> <br>
+          <img src="mainstyle.jpg"> <br>
+          이렇듯 link Tag로 HTML 문서에 CSS 문서를 지정하여 이용하는 것이다.
         </p>
       </div>
     </div>
