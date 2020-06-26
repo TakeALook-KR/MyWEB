@@ -27,15 +27,15 @@
   <div id="grid">
     <div>
     <ul>
-      <li><a href="HTML.html" target="_self" class="list">HTML</a></li>
-      <li><a href="CSS.html" target="_self" class="list" id="now">CSS</a></li>
+      <li><a href="HTML.html" target="_top" class="list">HTML</a></li>
+      <li><a href="CSS.html" target="_top" class="list" id="now">CSS</a></li>
       <li>
-        <a href="JavaScript.html" target="_self" class="list">JavaScript</a>
+        <a href="JavaScript.html" target="_top" class="list">JavaScript</a>
       </li>
-      <li><a href="Python.html" target="_self" class="list">Python</a></li>
-      <li><a href="Django.html" target="_self" class="list">Django</a></li>
+      <li><a href="Python.html" target="_top" class="list">Python</a></li>
+      <li><a href="Django.html" target="_top" class="list">Django</a></li>
     </ul>
-      </div>
+    </div>
       <div> 
       <p>
       <h2>1.CSS의 의미와 구조</h2>
@@ -76,9 +76,20 @@
       <p>  
         <strong>참고로, 선택자에서 HTML Tag는 다른것 없이 바로 태그명을 적어주고, class는 앞에 .을 붙여사용하며, 미디어 쿼리에서는 @를 붙여 구별한다.</strong>
         그리고 이것이 적용되어 실제 이 Page의 하단부에 gold 색상으로 made by. TakeALook라고 적힌 부분을 찾아볼 수 있다.  
+      </p>
+      <h4>"grid 구조"</h4>
+      <p>
+        grid 구조는 우리가 평소에 볼수있는 Page들의 구조를 구현할 수 있게 해주는 매우 할용성 높은 구조이다. 이전 까지는 카테고리와 본문 구조를 나누기 위해서 
+        표를 만들어 억지로 구현했지만, grid 구조에 의해서 간편하게 만들 수 있다.
+      </p>   
+      <p>
+        <strong>grid 구조를 이용하기 위해서는 div Tag를 이용해야한다.</strong> 구조를 나누어 줄 부분들을 각자
+        div로 묶어주고, 또 그 묶어준 Tag들을 다시한번 div를 이용하여 하나로 묶어준다. 그리고 <strong>제일 바깥쪽 div Tag에 grid라는 id를 부여하면 된다.</strong> 
+        그 다음부터는 자신이 계획한 대로 CSS를 수정해주면 된다. 아래의 사진은 이 Page의 실제 grid Tag 코드이다. <br>
+        <img src="grid.jpg"> <img src="css_grid.jpg">
       </p>  
-    </p>
-      <p><div id="madeby">made by. TakeALook</div></p>
+    </div>
+    <p><div id="madeby">made by. TakeALook</div></p>
     </div>
     <p>
       <div id="disqus_thread"></div>
