@@ -56,6 +56,22 @@
         위의 사진에서 대괄호 안에 들어있는 코드가 바로 declaration이라 불리는 요소이다. <strong>이 declaration은 style의 실질적 내용을 담당하는 부분이다.</strong> 
         그리고 <strong>대괄호 부분을 property라고 하는데, 영단어의 뜻 그대로 "속성"이라는 의미이다.</strong> 대괄호안에 들어가는 것을 property라고 불러주는 것이다.
       </p>
+      <h4>"구성 요소들의 대표적 size 표기"</h4>
+      <p>
+        CSS에는 elements의 크기를 지정하는 여러 단위가 있다. 그중 대표적인 단위를 보자면, <strong>"px, -%, -fr"</strong>이 있다. <br>
+       <strong>px</strong> : pixel을 뜻하는 코드로, <strong>앞에 원하는 크기의 수를 적어주면 된다.</strong> <br>
+       <strong>-%</strong> : %는 브라우저창의 크기에 맞게 %를 정해주는 코드로, <strong>화면이 어떤 크기든 그 크기의 맞는 비율로 elements를 보여준다.</strong> 예를들어 500px의 크기인 화면에
+       100%로 지정하면 500px만큼의 크기로 보여주고, 10%로 지정하면 50px로 보여주는 방식이다. <br> 
+       <strong>-fr</strong> : %와 비슷하게 화면 크기에 맞추어 크기가 변하지만, <strong>2개 이상의 대상에 이용하며, 각자의 상대적인 비율에 맞추어 보여준다.</strong> 예를들어 1fr의 elements와 2fr의 elements를 지정하면,
+       1:2 비율로 보여주는 것이다. 만약, 1fr과 1fr로 할경우는 1:1 비율로 보여준다.  
+      </p>
+      <h4>"border 와 margin, padding"</h4>
+      <p>
+        <strong>border 와 margin, padding은 화면구성의 기본적 요소이다.</strong> border는 elements의 테두리이고 margin은 테두리 바깥부분의 두께이며,
+        padding은 border와 elements의 사이 두께이다. CSS 디자인의 제일 기본이 되는 속성중 하나이기 때문에 잘 알아둘 필요가 있다. 
+        아래의 사진들은 직관적으로 구조를 볼 수 있는 예시로, 이 Page의 검사기능을 이용하면 볼 수 있는 장면과 요소들을 변경하는 방법에 대한 예시이다. <br>
+        <img src="border_margin_padding.jpg"></di> <img src="border_margin_padding_chainging.jpg">
+      </p>
       <h4>"div, span과의 연계"</h4>
       <p>
         이 내용은 HTML 카테고리에 들어가면 있는 내용이지만, CSS에서 매우 중요한 요소중 하나이기에 설명을 추가한다. 
@@ -87,6 +103,20 @@
         div로 묶어주고, 또 그 묶어준 Tag들을 다시한번 div를 이용하여 하나로 묶어준다. 그리고 <strong>제일 바깥쪽 div Tag에 grid라는 id를 부여하면 된다.</strong> 
         그 다음부터는 자신이 계획한 대로 CSS를 수정해주면 된다. 아래의 사진은 이 Page의 실제 grid Tag 코드이다. <br>
         <img src="grid.jpg"> <img src="css_grid.jpg">
+      </p>
+      <h4>"mediaquery"</h4>
+      <p>
+        mediaquery는 grid와 비슷한 맥락으로 만들어진 기술로, <strong>화면크기에 따른 WEB의 반응을 구현한 좀 더 동적인 WEB을 만드는 것을 도와준다.</strong> 
+        mediaquery의 장점은 다양한 기종에 맞춤 구조를 구현 할 수 있다는 점이다. 만약 화면이 작은 디바이스로 WEB을 접속한다면, 작은 화면에 특화된 구조를,
+        화면이 큰 디바이스로 접속한다면, 큰화면에 맞춘 구조를 바로바로 구현할 수 있다.  
+      </p>
+      <p>
+        mediaquery를 이용하기 위해서는 조건을 걸어주어야 한다. 아래의 사진은 CSS 문서에 mediaquery 조건을 정의한 모습이다. 
+        코드에 대한 해석을 좀 하자면, <strong>@media가 mediaquery의 조건이라는 것을 알려주는 selector이고 바로옆에 (max-width: -px)은 조건을 의미한다.</strong> 사진속의 조건은 
+        화면이 800px보다 작다면 이라는 뜻이다. 그리고 그 조건안에 #grid가 들어갔는데 그 의미는, <strong>이 조건에 부합하는 경우 #grid에 대해 코드를 실행한다는 뜻이다.</strong> 
+        실제로 이 사진속 코드가 적용된다면 800px보다 작은 화면의 디바이스로 접속하거나, 화면을 그 이하의 수치로 줄였을 때 #grid에 정의된 구조가 단순 block 구조가 된다.
+        그리고, 다시 화면을 800px 이상으로 늘리면 #grid에 정의된 조건이 살아난다. 이처럼 <strong>유동적인 화면을 구현</strong>하는것이 mediaquery이다. <br> 
+        <img src="mediaquery.jpg">
       </p>  
     </div>
     <p><div id="madeby">made by. TakeALook</div></p>
