@@ -48,3 +48,12 @@ strong {
 #now {
   color: gold;
 }
+@media (max-width: 800px) {
+  #grid {
+    display: block;
+  }
+  ul {
+    border: none;
+    padding-bottom: 10px;
+  }
+}
