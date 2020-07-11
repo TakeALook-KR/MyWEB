@@ -67,11 +67,9 @@ strong {
     position: sticky;
     top: 0;
     border:none;
-    
   }
   .siadNav a {
     display: inline
-
   }
   .main {
     margin-left: 0;
