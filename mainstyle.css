@@ -49,10 +49,6 @@ strong {
   color: white;
   display: block;
 }
-@media screen and (max-height: 450px) {
-  .siadNav {padding-top: 15px;}
-  .siadNav a {font-size: 18px;}
-}
 .main {
   margin-left: 165px; /* Same width as the sidebar + left position in px */
   font-size: 15px; /* Increased text to enable scrolling */
@@ -64,4 +60,20 @@ strong {
   margin-left: auto;
   margin-right: auto;
   width: 80%;
+}
+@media(max-width:800px) {
+  .siadNav {
+    display: inline;
+    position: sticky;
+    top: 0;
+    border:none;
+    
+  }
+  .siadNav a {
+    display: inline
+
+  }
+  .main {
+    margin-left: 0;
+  }
 }
