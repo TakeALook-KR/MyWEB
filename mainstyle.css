@@ -1,24 +1,13 @@
 body {
-  background-color: black;
-}
-a {
-  text-decoration: none;
+  font-family: "Lato", sans-serif;
 }
 h1 {
   text-align: center;
   font-size: 35px;
   border-bottom: 2px solid gold;
-  margin: 0;
-  padding: 5px;
 }
 h2 {
   color: white;
-}
-h3 {
-  color: gold;
-  margin: 0;
-  border-right: 2px solid gold;
-  width: 145px;
 }
 h4 {
   color: gold;
@@ -27,29 +16,6 @@ p {
   text-indent: 30px;
   text-align: left;
   color: white;
-}
-.list {
-  font-size: 25px;
-  color: white;
-  text-decoration: none;
-}
-.listSmall {
-  font-size: 20px;
-  color: white;
-  text-decoration: none;
-}
-ul {
-  border-right: 2px solid gold;
-  border-bottom: 2px solid gold;
-  margin: 0;
-  width: 130px;
-  padding-top: 15px;
-  padding-left: 15px;
-  padding-bottom: 15%;
-}
-#grid {
-  display: grid;
-  grid-template-columns: 150px 1fr;
 }
 #madeby {
   color: gold;
@@ -61,35 +27,41 @@ strong {
   color: gold;
   text-decoration: underline;
 }
-@media (max-width: 800px) {
-  #grid {
-    display: block;
-  }
-  ul {
-    border: none;
-    padding-bottom: 10px;
-  }
-  h3 {
-    border: none;
-    color: gold;
-  }
-}
-#noneindent {
-  text-indent: 0px;
-}
 .title {
   color: white;
   text-decoration: none;
 }
-.imgcenter {
+.siadNav {
+  width: 150px;
+  position: fixed;
+  z-index: 1;
+  top: 20px;
+  left: 10px;
+  background: black;
+  overflow-x: hidden;
+  padding: 8px 0;
+  border: gold 2px solid;
+}
+.siadNav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+}
+@media screen and (max-height: 450px) {
+  .siadNav {padding-top: 15px;}
+  .siadNav a {font-size: 18px;}
+}
+.main {
+  margin-left: 165px; /* Same width as the sidebar + left position in px */
+  font-size: 15px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+  background-color: black;
+}
+.center {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 90%;
-}
-video {
-  width: 500px;
-  height: 400px;
-  margin-left: 50px;
-  border: 2px solid white;
+  width: 80%;
 }
