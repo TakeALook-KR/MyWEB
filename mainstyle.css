@@ -82,3 +82,7 @@ strong {
     margin-left: 0;
   }
 }
+.js-clock {
+  color: gold;
+  text-align: center;
+}
