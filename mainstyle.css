@@ -5,9 +5,15 @@ h1 {
   text-align: center;
   font-size: 35px;
   border-bottom: 2px solid gold;
+  margin-top: 0;
 }
 h2 {
   color: white;
+}
+h3 {
+  color: gold;
+  margin-top: 10px;
+  text-align: center;
 }
 h4 {
   color: gold;
@@ -30,6 +36,7 @@ strong {
 .title {
   color: white;
   text-decoration: none;
+  display: inline;
 }
 .siadNav {
   width: 150px;
