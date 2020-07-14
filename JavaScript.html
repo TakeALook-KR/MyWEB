@@ -32,10 +32,6 @@
     <a href="Node_JS.html" target="_self">Node.JS</a>
     <a href="toDoList.html" target="_self">To do list</a>
   </div>
-  <div class="js-clock">
-    <h3>00:00</h3>
-  </div>
-  <script src="clock.js"></script>
     <h2>1.JavaScript의 특징과 HTML,CSS과의 차이점</h2>
     <p>
       <strong>JavaScript의 가장 큰 특징은 디버깅이 가능하며 동적이다. C++이나 Python과 같이 컴파일 언어라는 것이다.</strong> 
@@ -59,7 +55,8 @@
       <h4>"변수"</h4>
       <p>
         변수는 모든 프로그래밍언어의 기본 요소중 하나다. <strong>코딩을 하기 위해서는 일종의 수치나 문자열을 사용할 필요가 있는데, 
-        그것을 저장할 수 있는 공간이 이 '변수'인 것이다.</strong> 변수의 형태는 언어마다 다르지만, <strong>JavaScript의 변수는 주로 "var 변수명"으로 사용한다.</strong> 
+        그것을 저장할 수 있는 공간이 이 '변수'인 것이다.</strong> 변수의 형태는 언어마다 다르지만, 
+        <strong>JavaScript의 변수는 주로 let, const, var 3가지중에 하나를 사용한다. 그중에 let은 선언이후에도 변경이 가능하고, const는 한번 선언하면 변경이 불가능하다.</strong> 
         실제 변수의 예제는 바로 위 2.JavaScript의 구조와 사용법의 사진을 보면 볼수있다.
       </p>
       <h4>"연산자"</h4>
@@ -92,6 +89,15 @@
         가지며, 순차적으로 코드를 읽는 컴퓨터의 특성상 코드의 상단에 적어줘야 함수를 사용하는 것이 가능하다.</strong> 아래의 사진은 이 Page의 시계기능에 관련된 
         JavaScript이다. <br>
         <img src="function_js.jpg" width="50%">
+      </p>
+      <h4>"object"</h4>
+      <p>
+        object는 array와 비슷한 개념이지만, 활용방식이 다르다. <strong>object는 { }에 변수, 함수와 같은 대부분의 내용을 담을수있다. 기본적인 구조로는 {key : value}로 저장되는데, 
+        key는 저장된 정보의 주소 또는 이름이라 할수있다. 즉, 정보를 호출할때 key에 저장된 값으로 호출을 하면 그 key에 저장된 value값이 출력된다.</strong> 응용방식으로 key를 function의 이름으로 지정하고
+        value에 function의 기능을 저장하면, key를 호출함으로서 function을 실행하는 것이 가능하다. 참고로 document나 event와 같이 JavaScript에서 기본적으로 제공하는 문법도 사실 object이다. 
+        실제로 console.log(document);를 실행하면 object의 형식으로 document에 소속된 key와 value를 볼수있다. 아래의 사진은 직접 console창에서 document를 출력한 예시이다.<br>
+        <img src="document_console_log.jpg" width="40%"> <br>
+        <strong>위의 사진을 보면, 결국 우리는 document라는 object속에서 Page를 구현하고 있는것이다.</strong> 
       </p>
     </p>
         <p>
