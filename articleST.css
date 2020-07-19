@@ -59,7 +59,7 @@ strong {
   margin-left: 165px; /* Same width as the sidebar + left position in px */
   font-size: 15px; /* Increased text to enable scrolling */
   padding: 0px 10px;
-  background-color: black;
+  background-color: #1B1B1B
 }
 .center {
   display: block;
@@ -88,9 +88,14 @@ strong {
 }
 .main .haveBorder {
   border: gold 1px solid;
-  padding: 3px;
-  margin: 10px;
+  padding: 7px;
+  margin: 12px;
 }
 .main h4 {
   color: mediumseagreen;
+  border-bottom: white 1px solid;
+  border-top: white 1px solid ;
+  padding-bottom: 8px;
+  padding-top: 8px;
+  text-align: center;
 }
