@@ -100,13 +100,3 @@ strong {
   padding-top: 8px;
   text-align: center;
 }
-.main .noneIndentHaveBorder {
-  border: gold 1px solid;
-  padding: 7px;
-  margin: 12px;
-}
-.noneIndentHaveBorder p {
-  text-align: left;
-  color: white;
-  text-indent: 0;
-}
