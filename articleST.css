@@ -13,12 +13,11 @@ h2 {
 h4 {
   color: gold;
 }
-h5 {
+.main h5 {
   color: mediumseagreen;
   font-size: 15px;
 }
-p {
-  text-indent: 30px;
+.main p {
   text-align: left;
   color: white;
 }
