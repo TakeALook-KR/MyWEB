@@ -14,7 +14,7 @@ h4 {
   color: gold;
 }
 h5 {
-  color: white;
+  color: mediumseagreen;
   font-size: 15px;
 }
 p {
@@ -22,11 +22,7 @@ p {
   text-align: left;
   color: white;
 }
-.haveBorder p {
-  text-align: left;
-  color: white;
-  text-indent: 0;
-}
+
 #madeby {
   color: gold;
 }
@@ -103,4 +99,14 @@ strong {
   padding-bottom: 8px;
   padding-top: 8px;
   text-align: center;
+}
+.main .noneIndentHaveBorder {
+  border: gold 1px solid;
+  padding: 7px;
+  margin: 12px;
+}
+.noneIndentHaveBorder p {
+  text-align: left;
+  color: white;
+  text-indent: 0;
 }
