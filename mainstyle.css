@@ -106,4 +106,8 @@ strong {
   border-bottom: gold 2px solid;
   padding-bottom: 5px;
 }
-
+.leftMini {
+  display: block;
+  margin-right: auto;
+  width: 50%;
+}

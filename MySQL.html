@@ -63,17 +63,17 @@
         <p>
           필자가 말한 'Bitnami WAMP'를 이용하여 My SQL을 설치했다면, 기본적으로 자동으로 My SQL server가 실행되어 있는 상태가 되지만, 만약 그렇지 않다면, 'Bitnami WAMP Stack Sanager Tool'을 이용하여 server를 실행시키면 된다. 아래 사진은 
           'Bitnami WAMP Stack Sanager Tool'에 대한 이용법이다.<br><br>
-          <img src="bitnamiEX1.jpg" class="center"><br> 'Bitnami WAMP Stack Sanager Tool'를 실행시켜서 Manage Server 탭에 들어오면 이런 화면이 뜬다. 여기서 My SQL Database를 선택하고 Start를 누르면 서버가 가동된다.<br><br>
-          <img src="bitnamiEX2.jpg" class="center"><br> 이런 상태가 된다면 My SQL을 이용하기 위한 준비는 끝났다. 참고로 Apache Web server는 무료로 제공되는 서버엔진이다. 하지만 Node.JS와 같은 언어로 server 구축을 할수있다면 사용할일이 없다.
+          <img src="bitnamiEX1.jpg" class="leftMini"><br> 'Bitnami WAMP Stack Sanager Tool'를 실행시켜서 Manage Server 탭에 들어오면 이런 화면이 뜬다. 여기서 My SQL Database를 선택하고 Start를 누르면 서버가 가동된다.<br><br>
+          <img src="bitnamiEX2.jpg" class="leftMini"><br> 이런 상태가 된다면 My SQL을 이용하기 위한 준비는 끝났다. 참고로 Apache Web server는 무료로 제공되는 서버엔진이다. 하지만 Node.JS와 같은 언어로 server 구축을 할수있다면 사용할일이 없다.
         </p>
         <p>
           이제 본격적으로 My SQL을 실행하는 법을 알아보자. 우선 처음에 <strong>My SQL을 설치할때 디렉토리를 잘 기억해두길 바란다. 디렉토리를 모르면 My SQL을 실행시킬수가 없다.</strong>
           만약 디렉토리를 모르겠다면, 아래 사진과 같이 직접 찾아야한다.<br><br>
-          <img src="findMySQLEX1.jpg" class="center"><br> 여기서 주의할 점은 <strong>mysql\bin 폴더를 찾는 것이다.</strong> 이 폴더를 찾았다면 디렉토리를 ctrl+c로 복사한다. 디렉토리를 복사했다면 window key + r 을 눌러 'cmd'를 실행한다. 실행시키면 아래 사진과 같은 화면이 뜬다.<br><br>
-          <img src="sqlCmdEX1.jpg" class="center"><br> 이 화면에서 아까 복사한 디렉토리로 변경을 해줘야한다. 명령어는 'cd' change directory의 약자다. 디렉토리를 변경하면 아래 사진과 같은 화면이 된다.<br><br>
-          <img src="sqlCmdEX2.jpg" class="center"><br> 이 상태에서 드디어 대망의 My SQL을 실행해보자. 명령어는 mysql -uroot -p 다. 입력하면 아래와 같은 화면이 된다.<br><br>
-          <img src="sqlCmdEX3.jpg" class="center"><br> 이렇게 비밀번호를 입력하라고 하는데, 이때 이 비밀번호는 My SQL을 설치할때 입력한 비밀번호이다. 만약 입력을 하지않았다면 그냥 Enter를 입력하자. 이렇게 비밀번호까지 입력하면 아래와 같은 화면이 되며 실행된다.<br><br>
-          <img src="sqlCmdEX4.jpg" class="center"><br> 이런 화면이 뜨면 성공적으로 My SQL가 실행 되었다는 뜻이다.
+          <img src="findMySQLEX1.jpg" class="leftMini"><br> 여기서 주의할 점은 <strong>mysql\bin 폴더를 찾는 것이다.</strong> 이 폴더를 찾았다면 디렉토리를 ctrl+c로 복사한다. 디렉토리를 복사했다면 window key + r 을 눌러 'cmd'를 실행한다. 실행시키면 아래 사진과 같은 화면이 뜬다.<br><br>
+          <img src="sqlCmdEX1.jpg" class="leftMini"><br> 이 화면에서 아까 복사한 디렉토리로 변경을 해줘야한다. 명령어는 'cd' change directory의 약자다. 디렉토리를 변경하면 아래 사진과 같은 화면이 된다.<br><br>
+          <img src="sqlCmdEX2.jpg" class="leftMini"><br> 이 상태에서 드디어 대망의 My SQL을 실행해보자. 명령어는 mysql -uroot -p 다. 입력하면 아래와 같은 화면이 된다.<br><br>
+          <img src="sqlCmdEX3.jpg" class="leftMini"><br> 이렇게 비밀번호를 입력하라고 하는데, 이때 이 비밀번호는 My SQL을 설치할때 입력한 비밀번호이다. 만약 입력을 하지않았다면 그냥 Enter를 입력하자. 이렇게 비밀번호까지 입력하면 아래와 같은 화면이 되며 실행된다.<br><br>
+          <img src="sqlCmdEX4.jpg" class="leftMIni"><br> 이런 화면이 뜨면 성공적으로 My SQL가 실행 되었다는 뜻이다.
         </p>
         <p>
           조금 보충설명을 하자면, <strong>실행할때 사용한 명령어는 mysql -u(사용할 계정) -p 이다. 위의 과정에서 사용한 [root]는 관리자 계정으로 모든 권한을 가지고있다.</strong>
