@@ -99,3 +99,8 @@ strong {
   padding-top: 8px;
   text-align: center;
 }
+.haveBorder img {
+  float: left;
+  width: 450px;
+  margin: 5px;
+}

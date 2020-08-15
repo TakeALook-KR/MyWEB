@@ -114,7 +114,7 @@
         화면이 800px보다 작다면 이라는 뜻이다. 그리고 그 조건안에 #grid가 들어갔는데 그 의미는, <strong>이 조건에 부합하는 경우 #grid에 대해 코드를 실행한다는 뜻이다.</strong> 
         실제로 이 사진속 코드가 적용된다면 800px보다 작은 화면의 디바이스로 접속하거나, 화면을 그 이하의 수치로 줄였을 때 #grid에 정의된 구조가 단순 block 구조가 된다.
         그리고, 다시 화면을 800px 이상으로 늘리면 #grid에 정의된 조건이 살아난다. 이처럼 <strong>유동적인 화면을 구현</strong>하는것이 mediaquery이다. <br> 
-        <img src="mediaquery.jpg">
+        <img src="mediaquery.jpg" width="500px">
       </p>
       <h4>"부모와 자식 속성 그리고 github와 CSS"</h4>
       <p>
@@ -124,7 +124,7 @@
         나중에 큰규모로 코드체인지를 하더라도 간편하게 문제를 잡아낼수있다.</strong> 여기서 부모&자식 속성에 대하여 모를수도 있기때문에 설명하자면, 만약 body Tag에 class를 a라 하고
         body Tag에 종속된 p Tag를 class b로 정의한다면, body가 부모, p가 자식 속성이 되어 자식속성에 class를 지정하더라도 부모의 class에 영향을 받게된다. 해결방법은 
         부모 class에 속한 Tag와 같은 식으로 지정하여 style을 변경하면 정상적으로 적용된다. 아래의 사진은 이러한 방식으로 적용한 예시이다. <br>
-        <img src="gidhub_CSS_PC.jpg" width="60%">
+        <img src="gidhub_CSS_PC.jpg" width="400px">
       </p>
       <h4>"selector 연습하는 Page"</h4>
       <p>
@@ -134,13 +134,20 @@
       </p>
       <p>
         위의 페이지에 들어가면 대락 이런 화면이다.<br><br>
-        <img src="CSS_Diner.jpg" class="center">
+        <img src="CSS_Diner.jpg" width="700px">
       </p> 
       <p>
         위에 보이는 화면에서 왼쪽 흰색 부분이 유저가 정답을 적는 곳이며, 오른쪽이 HTML 상태를 보여주는 곳이다. 그리고 위에 보이는 그림이 실제 WEB에 표시되고 있는 모습이다.
         오른쪽의 설명을 보고 적절한 selector를 정답란에 적어서 Enter키를 눌러주면 된다. 
       </p>
-
+      <h4>"float"</h4>
+      <p>
+        float은 <strong>글의 본문과 사진의 위치를 조정할 때 사용하는 속성이다.</strong> 예를들어, 글 시작 부분에 사진을 넣고 그 사진 주변을 본문으로 둘러주는 방식이다. 교과서와 잡지에서 많이 볼수있는 방식이기도 하다.
+        사용방법은 간단하다. HTML에 직접 스타일 지정을 하거나, CSS 스타일 문서에 정의 해주면 된다. <strong>한 가지 주의점은 이미 부모 속성에서 위치를 정의했다면 그 방식을 그대로 상속받아 쓰기 때문에 따로 빼서 설정해줄 필요가있다.</strong>
+        아래의 사진은 日本語 page의 본문에 적용한 CSS 코드다.<br>
+        <img src="floatEX.jpg"><br>
+        코드를 보면 알수있겠지만 img Tag에 float을 적용했고, 주의할 점으로 알려줬던 부모의 속성을 상속받는 것을 코드상에 있는 "haveBorder"라는 클레스 내에서 다른 클래스를 추가해본 결과 적용되지 않는 것을 확인했다.
+      </p>
     <p><div id="madeby">made by. TakeALook</div></p>
     </div>
     <p>
